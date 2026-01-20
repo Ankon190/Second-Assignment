@@ -12,10 +12,20 @@ body{
     margin: 0 auto;
 
 }
+.mobile-navbar{
+    display: none;
+    max-width: 1600px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1A0B2E;
+    margin: 0 auto;
+}
+
 .nav-heading h1{
     color:white;
 }
-.nav-heading span{
+.nav-heading span,
+.mobile-navbar span{
     background-image: linear-gradient(to bottom, #9100F8,#FB09B4,#F7E93F );
     background-clip: text;
     color: transparent;
@@ -37,6 +47,25 @@ body{
     padding: 12.5px 16px;
     border: none;
     border-radius: 20px;
+    animation: dropping 4s ease-out;
+}
+@keyframes dropping {
+    0% {
+        transform: translateY(-20px); /* Start 100px above */
+        opacity: 0; /* Start invisible */
+    }
+    25%{
+        transform: translateY(0);
+        opacity: 0.75;
+    }
+    50%{
+        transform: translateY(-20px);
+        opacity:0.5;
+    }
+    100% {
+        transform: translateY(0); /* End at normal position */
+        opacity: 1; /* End fully visible */
+    }
 }
 .banner{
     max-width: 1600px;
@@ -58,6 +87,20 @@ body{
 }
 .record-img{
     position:relative;
+    animation: slideDown 4s ease-out;
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-150px); /* Start 100px above */
+        opacity: 0; /* Start invisible */
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        transform: translateY(0); /* End at normal position */
+        opacity: 1; /* End fully visible */
+    }
 }
 .record-img span{
     position: relative;
@@ -326,6 +369,12 @@ body{
 
 /* responsive design */
 @media screen and (max-width: 576px) {
+    .navbar{
+        display: none !important;
+    }
+    .mobile-navbar{
+        display: flex !important;
+    }
     .banner-container{
         max-width: 100%;
         background-size: cover;
@@ -362,5 +411,13 @@ body{
     .social-links{
         justify-content: center;
         align-items: center;
+    }
+    .links{
+        flex-wrap: wrap;
+        margin: 0 70px;
+    }
+    .host h1{
+        font-size: 30px;
+        margin-bottom: 15px;
     }
 }
