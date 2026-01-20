@@ -1,5 +1,6 @@
 body{
     font-family: 'Inter', 'sans-serif';
+    font-size: 16px;
     
 }
 .navbar{
@@ -37,20 +38,82 @@ body{
     border: none;
     border-radius: 20px;
 }
-section{
+.banner{
     max-width: 1600px;
+    margin: 0px auto;
 }
 
 .banner-container{
     background: url(../images/hero-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width:100%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-info{
+    text-align: center;
+    color:white;
+    margin: 101px auto;
+}
+.record-img{
+    position:relative;
+}
+.record-img span{
+    position: relative;
+    font-size: 18px;
+    font-weight: 600px;
+    padding: 8px 16px;
+    color:#1A0B2E;
+    background-color: #00FF88;
+    border-radius: 20px;
+    margin: 22px 23px 301px 253px;
+    top:50px;
 }
 
+.record-img-bg{
+    background-image: url(../images/hero-circle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 350px;
+    max-height: 350px;
+    margin:0 auto;
+}
+.record-img-bg img{
+    padding: 77px 116px 97px 116px;
+}
+.banner-heading h1{
+    font-size: 4em;
+    margin: 8px auto;
+}
+.banner-button{
+    margin: 0 auto;
+}
+.subscribe-btn{
+    font-size: 16px;
+    padding: 12px 20px;
+    color: #00FF88;
+    background-color: transparent;
+    border:2px solid #00FF88;
+    border-radius: 20px;
+}
 /* responsive design */
 @media screen and (max-width: 576px) {
-    .nav-links a, .btn{
-        display: none;
+    .banner-container{
+        max-width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .record-img-bg{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .record-img-bg img{
+        padding:60px;
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .record-img span{
+        right: 20px;
     }
 }
