@@ -17,8 +17,8 @@ body{
 }
 .nav-heading span{
     background-image: linear-gradient(to bottom, #9100F8,#FB09B4,#F7E93F );
-     background-clip: text;
-     color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .nav-links{
@@ -97,6 +97,233 @@ body{
     border:2px solid #00FF88;
     border-radius: 20px;
 }
+.about{
+    background-color: #1A0B2E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.about-text{
+    color:#FFFFFF;
+    text-align: center;
+    max-width: 70%;
+    margin:50px auto 80px auto;
+}
+.about-text p{
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.8;
+}
+.about-text h1{
+    font-size: 48px;
+}
+.divider {
+    border: none;
+    background-color: #FFFFFF;
+    opacity:0.3;
+    height: 1px;
+    width: 80%;
+}
+.about-number{
+    padding: 80px 0 80px 0;
+    margin:0 auto;
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:80px;
+}
+.cards{
+    color: #00FF88;
+}
+.cards p{
+    color: #FFFFFF;
+}
+.choose-techwave{
+    background-color: #230E3D;
+    margin:0 auto;
+    max-width: 1600px;
+}
+.choose-techwave-heading h1{
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    margin:0;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    
+}
+#grid1 {
+    grid-area: grid1;
+}
+
+#grid2 {
+    grid-area: grid2;
+}
+
+#grid3 {
+    grid-area: grid3;
+}
+
+#grid4 {
+    grid-area: grid4;
+}
+
+#grid5 {
+    grid-area: grid5;
+}
+#grid1, #grid2, #grid3, #grid4, #grid5{
+    padding: 20px 40px;
+    background-color: #351165;
+    border-radius: 15px;
+
+} 
+.grid-view {
+    color:#FFFFFF;
+    max-width: 70%;
+    display: grid;
+    gap: 30px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: auto auto auto; /* 3 rows, height based on content */
+    
+    
+    /* Define grid areas based on your screenshot */
+    grid-template-areas: 
+        "grid1 grid2 grid2"
+        "grid1 grid3 grid3"
+        "grid4 grid4 grid5";
+}
+.grid-view div p{
+    opacity: 0.7;
+}
+.feature-and-host{
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    margin:0 auto;
+    color: #FFFFFF;
+    padding-bottom:40px ;
+}
+.features h1{
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    margin:0;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.featured-episodes{
+    margin:0 auto;
+    max-width: 70%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    margin-bottom: 120px;
+}
+.grid-features{
+    background-color: #250D44;
+    border-radius: 15px;
+}
+.grid-features h3,
+.grid-features p,
+.video-duration{
+    padding: 0 10px;
+}
+.grid-features p{
+    opacity: 0.7;
+}
+.video-duration{
+    display: flex;
+    gap: 8px;
+    color: #00FF88;
+    padding-bottom: 10px;
+}
+.video-duration img{
+    max-width: 20px;
+    max-height: 20px;
+}
+.video-duration p{
+    margin:0;
+}
+.host{
+    max-width: 70%;
+    margin: 0 auto;
+    padding:40px;
+    background-color: #351165;
+    border-radius: 15px;
+}
+.host h1{
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    margin:0;
+}
+.host-details{
+    display: flex;
+    gap: 24px;
+}
+.host-details section p{
+    opacity:0.7;
+    margin:0;
+}
+.social-links{
+    margin-top: 20px;
+    display:flex;
+    gap:10px;
+}
+.social-links div{
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding:5px;
+}
+.social-links div img{
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    background-image: url(../images/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 100%;
+}
+.footer h1{
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+}
+.footer-container span{
+    background-image: linear-gradient(to bottom, #9100F8,#FB09B4,#F7E93F );
+    background-clip: text;
+    color: transparent;
+}
+.footer-container p{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    opacity:60%;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin:32px auto;
+}
+.links span{
+    color:#FFFFFF;
+    font-size: 16px;
+    opacity: 60%;
+}
+
 /* responsive design */
 @media screen and (max-width: 576px) {
     .banner-container{
@@ -115,5 +342,25 @@ body{
     }
     .record-img span{
         right: 20px;
+    }
+    .about-number{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .grid-view{
+        gap:16px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "grid1" "grid2" "grid3" "grid4" "grid5";
+    }
+    .featured-episodes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .host-details{
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-links{
+        justify-content: center;
+        align-items: center;
     }
 }
