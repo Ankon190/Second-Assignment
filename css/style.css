@@ -420,4 +420,19 @@ body{
         font-size: 30px;
         margin-bottom: 15px;
     }
+    .features h1{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0 20px 0 20px;
+        font-size: 40px;
+    }
+    .choose-techwave-heading h1{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0 20px 0 20px;
+        font-size: 40px;
+    }
+    .footer h1{
+        margin: 0 0 20px 0;
+    }
 }
